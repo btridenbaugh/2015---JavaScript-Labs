@@ -1,0 +1,36 @@
+<html>
+<title>Lab Assignments #2 P.4</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 4</h1>
+<p>The button will convert a number to binary.</p>
+
+<b>Insert Number Here: </b><input type = "text" name = "deci" id = "deci" size = "15" maxlength = "15" />
+
+<button onclick="dec2bin()">Click Me</button>
+
+<p id = "result"></p>
+
+<script>
+
+function dec2bin() {
+var x = document.getElementById("deci").value;
+
+if ((/[^0-9]/g.test(x)) || x == "") {
+document.getElementById("deci").value = "";
+document.getElementById("deci").focus();
+return false;
+}
+
+x = parseInt(x);
+
+var bin = x.toString(2);
+
+var figs = "" + x + " in binary is " + bin + "<br>";
+
+document.getElementById("result").innerHTML = figs;
+}
+</script>
+
+</body>
+</html>

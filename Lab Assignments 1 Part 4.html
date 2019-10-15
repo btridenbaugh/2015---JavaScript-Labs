@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Lab Assignments #1 P.4</title>
+</head>
+<body>
+<h1>Lab Assignments #1 Part 4</h1>
+
+<p>What is percentage of 17 / 50 ?</p>
+
+<p id="per"></p>
+
+<button type="button" onclick="percent()">Click Me For The Answer</button>
+
+<script>
+var a = 17;
+var b = 50;
+var c = (a / b) * 100;
+
+function percent() {
+document.getElementById("per").innerHTML = c.toFixed(0) + "%";
+}
+</script>
+</body>
+</html>

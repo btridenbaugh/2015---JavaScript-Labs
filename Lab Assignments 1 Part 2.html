@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Lab Assignments #1 P.2</title>
+</head>
+<body>
+<h1>Lab Assignments #1 Part 2</h1>
+
+<p>Button that displays the results of the mathmatical equation using variables.</p>
+
+<p>4 * (3 + 5) = <span id="stuff"></span></p>
+
+<button onclick="stuff()">Click Me For The Answer</button>
+
+<script>
+var a = 4; //Assigns a value to variable a
+var b = 3; //Assigns a vaule to variable b
+var c = 5; //Assigns a value to variable c
+function stuff() {
+document.getElementById("stuff").innerHTML = (b + c) * a;
+}
+</script> 
+
+</body>
+</html>

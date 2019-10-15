@@ -1,0 +1,31 @@
+<html>
+<title>Lab Assignments #2 P.3</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 3</h1>
+<p>The button will edit the sentence below.</p>
+
+<p id="sent">I like to eat apples</p>
+
+<button onclick="myFunction()">Click Here</button>
+
+<script>
+
+var str = document.getElementById("sent").innerHTML; 
+var txt = str.replace("apples","bananas");
+var xtx = str.replace("bananas","apples");	
+
+function myFunction() {
+
+if (document.getElementById("sent").innerHTML== "I like to eat apples" ) {
+    document.getElementById("sent").innerHTML = txt;
+}
+
+else {
+    document.getElementById("sent").innerHTML = xtx;
+}
+
+}
+</script>
+</body>
+</html>

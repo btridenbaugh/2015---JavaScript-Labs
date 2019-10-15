@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Lab Assignments #1 P.6</title>
+</head>
+<body>
+<h1>Lab Assignments #1 Part 6</h1>
+
+<p>What is 85&#176 Celsius in Fahrenheit?</p>
+
+<p id="degree"></p>
+
+<button type="button" onclick="degree()">Click Me For The Answer</button>
+
+<script>
+var a = 85;
+var b = a * (9 / 5) + 32;
+
+function degree() {
+document.getElementById("degree").innerHTML = b.toFixed(3) + "&#176";
+}
+</script>
+</body>
+</html>

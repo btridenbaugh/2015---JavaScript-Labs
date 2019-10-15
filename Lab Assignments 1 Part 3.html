@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Lab Assignments #1 P.3</title>
+</head>
+<body>
+<h1>Lab Assignments #1 Part 3</h1>
+
+<p>Click the Button to display the answers to the following basic math operations.</p>
+
+<p>(13 + 8) + 7 = <span id="add"></span></p>
+<button type="button" onclick="addition()">Click Me For The Answer</button>
+
+<p>(13 - 8) - 7 = <span id="sub"></span></p>
+<button type="button" onclick="subtraction()">Click Me For The Answer</button>
+
+<p>(13 * 8) * 7 = <span id="mul"></span></p>
+<button type="button" onclick="multiplication()">Click Me For The Answer</button>
+
+<p>(13 / 8) / 7 = <span id="div"></span></p>
+<button type="button" onclick="division()">Click Me For The Answer</button>
+
+<script>
+var x = 13;
+var y = 8;
+var z = 7;
+var a = (x + y) + z;
+var b = (x - y) - z;
+var c = (x * y) * z;
+var d = (x / y) / z;
+function addition() {
+document.getElementById("add").innerHTML = a;
+}
+function subtraction() {
+document.getElementById("sub").innerHTML = b;
+}
+function multiplication() {
+document.getElementById("mul").innerHTML = c;
+}
+function division() {
+document.getElementById("div").innerHTML = d.toFixed(3);
+}
+</script>
+
+</body>
+</html>

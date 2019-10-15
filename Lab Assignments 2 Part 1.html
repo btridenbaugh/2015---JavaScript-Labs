@@ -1,0 +1,23 @@
+<html>
+<title>Lab Assignments #2 P.1</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 1</h1>
+<p>The button will reverse the characters of the word below.</p>
+
+<p id="lemons"></p>
+
+<button onclick="myFunction()">Click Here</button>
+
+<script>
+var reverse = ["l", "e", "m", "o", "n", "s"];
+document.getElementById("lemons").innerHTML = reverse;
+
+function myFunction() {
+reverse.reverse();
+document.getElementById("lemons").innerHTML = reverse;
+}
+</script>
+
+</body>
+</html>

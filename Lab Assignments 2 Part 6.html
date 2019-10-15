@@ -1,0 +1,32 @@
+<html>
+<title>Lab Assignments #2 P.6</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 6</h1>
+<p>Click to find two random number between 1 and 6.</p>
+
+<p>Dice 1:<div id="dice1"></div></p>
+
+<p>Dice 2:<div id="dice2"></div></p>
+
+<button onclick="random1()">Click Here to Roll One Dice</button>
+
+<button onclick="random2()">Click Here to Roll Both Dice</button>
+
+
+<script>
+function random1() {
+	document.getElementById("dice1").innerHTML = 
+	Math.floor(Math.random() * 7);
+}
+function random2() {
+	document.getElementById("dice1").innerHTML = 
+	Math.floor(Math.random() * 7);
+	document.getElementById("dice2").innerHTML = 
+	Math.floor(Math.random() * 7);
+}
+</script>
+
+</body>
+
+</html>

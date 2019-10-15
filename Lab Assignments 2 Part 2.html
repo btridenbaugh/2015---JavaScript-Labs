@@ -1,0 +1,21 @@
+<html>
+<title>Lab Assignments #2 P.2</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 2</h1>
+<p>The button will edit the sentence below.</p>
+
+<p id="sent"></p>
+
+<button onclick="myFunction()">Click Here</button>
+
+<script>
+var str = "cows live in a barn";
+document.getElementById("sent").innerHTML = str;
+
+function myFunction() {
+document.getElementById("sent").innerHTML = str.slice(0,14);
+}
+</script>
+</body>
+</html>

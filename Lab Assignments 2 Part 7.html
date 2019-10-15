@@ -1,0 +1,59 @@
+<html>
+<title>Lab Assignments #2 P.7</title>
+</head>
+<body>
+<h1>Lab Assignments #2 Part 7</h1>
+
+<h3>Click to choose a random number</h3>
+<p id="rand"></p>
+<button onclick="random()">Click Me</button>
+
+<h3>What is the minimum in this set of numbers: 4895, 519, 1234, -5567</h3>
+<p id="mini"></p>
+<button onclick="minimum()">Click Me</button>
+
+<h3>What is the maximum in this set of numbers: 4895, 519, 1234, -5567</h3>
+<p id="maxi"></p>
+<button onclick="maximum()">Click Me</button>
+
+<h3>What is the rounded number: 8.5452528416965659</h3>
+<p id="rou"></p>
+<button onclick="round()">Click Me</button>
+
+<h3>What is the highest integer: 4.11111111111111114</h3>
+<p id="cei"></p>
+<button onclick="ceiling()">Click Me</button>
+
+<h3>What is the lowest integer: 8.98989898989</h3>
+<p id="flo"></p>
+<button onclick="floor()">Click Me</button>
+
+</body>
+<script>
+function random() {
+	document.getElementById("rand").innerHTML = Math.random();
+}
+
+function minimum() {
+	document.getElementById("mini").innerHTML = Math.min(4895, 519, 1234, -5567);
+}
+
+function maximum() {
+	document.getElementById("maxi").innerHTML = Math.max(4895, 519, 1234, -5567);
+}
+
+function round() {
+	document.getElementById("rou").innerHTML = Math.round(8.5452528416965659);
+}
+
+function ceiling() {
+	document.getElementById("cei").innerHTML = Math.ceil(4.11111111111111114);
+}
+
+function floor() {
+	document.getElementById("flo").innerHTML = Math.floor(8.98989898989);
+}
+
+</script>
+
+</html>
